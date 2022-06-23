@@ -55,7 +55,7 @@ jobs:
       - checkout
       - run:
           name: API Environment variables
-          # TODO: Setting environment variables
+          # TODO: Setting Environment Variables
           command: |
             echo "# TODO: Set the environment variables for the API"
             npm run "api:env"
