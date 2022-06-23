@@ -14,8 +14,7 @@
 		"clean": "rm -rf www/ || true",
 		"deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy",
 		"build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"env": "eb setenv AWS_BUCKET=arn:aws:s3:::udacityrandom2053 AWS_PROFILE=default AWS_REGION=us-east-1 JWT_SECRET=mysecretstring PORT_DB=5432 POSTGRES_DB=postgres POSTGRES_HOST=database-1.cobzaxlh4qf3.us-east-1.rds.amazonaws.com POSTGRES_PASSWORD=RqmmI4Kw POSTGRES_USERNAME=postgres URL=http://udacityrandom2053.s3-website-us-east-1.amazonaws.com/home"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "Gabriel Ruttner",
