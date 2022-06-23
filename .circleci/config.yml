@@ -54,17 +54,17 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: API Environment variables
-          # TODO: Setting Environment Variables
-          command: |
-            echo "# TODO: Set the environment variables for the API"
-            npm run "api:env"
-      - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run deploy
+      - run:
+          name: API Environment variables
+          # TODO: Setting Environment Variables
+          command: |
+            echo "# TODO: Set the environment variables for the API"
+            npm run "api:env"
 workflows:
   udagram:
     jobs:
