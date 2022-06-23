@@ -59,6 +59,7 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run deploy
+            eb setenv
 workflows:
   udagram:
     jobs:
